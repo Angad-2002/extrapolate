@@ -88,7 +88,7 @@ def prompt_common_context(include_logging: bool = False) -> Dict[str, Any]:
     
     default_table = os.getenv("GCP_BILLING_TABLE_PREFIX") or "gcp_billing_export_v1"
     billing_table_prefix = inquirer.text(
-        message="Billing table name (Enter = default; or full name e.g. gcp_billing_export_v1_0148A9_A6130F_E0294F for single partitioned table):",
+        message="Billing table name (e.g. gcp_billing_export_v1):",
         default=default_table,
     ).execute()
     if not billing_table_prefix.strip():
