@@ -1,0 +1,94 @@
+[project]
+name = "xpol"
+version = "1.0.0"
+description = "GCP FinOps Dashboard for Cloud Run, serverless services, and cost optimization"
+readme = "README.md"
+requires-python = ">=3.9,<3.14"
+license = {text = "MIT"}
+authors = [
+    {name = "GCP FinOps Dashboard Team"}
+]
+dependencies = [
+    "google-cloud-bigquery>=3.11.0",
+    "google-cloud-run>=0.10.0",
+    "google-cloud-functions>=1.13.0",
+    "google-cloud-compute>=1.14.0",
+    "google-api-python-client>=2.100.0",
+    "google-cloud-monitoring>=2.15.0",
+    "google-cloud-resource-manager>=1.10.0",
+    "google-cloud-billing>=1.12.0",
+    "google-auth>=2.23.0",
+    "rich>=13.5.0",
+    "plotly>=5.16.0",
+    "kaleido>=0.2.1",
+    "fpdf2>=2.7.5",
+    "click>=8.1.0",
+    "pandas>=2.0.0",
+    "python-dateutil>=2.8.0",
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "python-dotenv>=1.0.0",
+    "reportlab>=4.0.0",
+    "groq>=0.4.0",
+    "prophet>=1.1.5",
+    "requests>=2.31.0",
+    "packaging>=23.0",
+    "pyyaml>=6.0",
+    "tomli>=2.0.1 ; python_full_version < '3.11'",
+    "inquirerpy>=0.3.4",
+    "pyfiglet>=0.8.0",
+    "toml>=0.10.2",
+    "openai>=1.0.0",
+    "anthropic>=0.7.0",
+    "sentence-transformers>=2.2.0",
+    "chromadb>=0.4.0",
+    "pypdf>=3.0.0",
+    "faiss-cpu>=1.7.4",
+    "numpy>=1.24.0",
+    "langchain>=0.3.0",
+    "langchain-community>=0.0.20",
+    "langchain-chroma>=0.1.0",
+    "langchain-qdrant>=0.1.0",
+    "qdrant-client>=1.7.0",
+    "langchain-groq>=0.0.1",
+    "langchain-openai>=0.1.0",
+    "langchain-anthropic>=0.1.0",
+    "httpx<0.28.0",
+    "google-cloud-billing-budgets>=1.18.0",
+    "langchain-huggingface>=0.3.1",
+    "alive-progress>=3.3.0",
+    "textual>=0.47.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "mypy>=1.5.0",
+    "black>=23.7.0",
+    "ruff>=0.0.280",
+]
+
+[project.scripts]
+xpol = "xpol.cli.main:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["xpol"]
+
+[tool.black]
+line-length = 100
+target-version = ['py39']
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
