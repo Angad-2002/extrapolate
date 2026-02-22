@@ -1,5 +1,7 @@
 # Installation
 
+This guide covers installing **Extrapolate** (CLI: `xpol`).
+
 ## Requirements
 
 - **Python:** 3.9 or higher (below 3.14 per `pyproject.toml`)

@@ -1,6 +1,6 @@
-# xpol — GCP FinOps Dashboard
+# Extrapolate
 
-**xpol** is a GCP cost optimization and resource auditing toolkit. It analyzes BigQuery billing data, runs audits across Cloud Run, Cloud Functions, Compute Engine, Cloud SQL, and Storage, and provides a REST API and CLI for dashboards, PDF reports, cost forecasting, and AI-powered insights.
+**Extrapolate** is a GCP cost optimization and resource auditing toolkit. The CLI and Python package are named **xpol**. It analyzes BigQuery billing data, runs audits across Cloud Run, Cloud Functions, Compute Engine, Cloud SQL, and Storage, and provides a REST API and CLI for dashboards, PDF reports, cost forecasting, and AI-powered insights.
 
 ## Features
 

@@ -1,6 +1,6 @@
 # CLI reference
 
-Entry point: **`xpol`** (or `uv run xpol` when using uv).
+**Extrapolate** is used from the command line as **`xpol`** (or `uv run xpol` when using uv).
 
 Global options (on the main group):
 

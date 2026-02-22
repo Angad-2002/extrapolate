@@ -1,10 +1,10 @@
 # Architecture & system design
 
-This document describes the high-level architecture of **xpol** (GCP FinOps Dashboard): components, data flow, and how the CLI and API use the same core services.
+This document describes the high-level architecture of **Extrapolate** (GCP FinOps Dashboard): components, data flow, and how the CLI and API use the same core services.
 
 ## Overview
 
-xpol is a Python application that:
+Extrapolate is a Python application (package name **xpol**) that:
 
 1. **Reads GCP billing data** from BigQuery (billing export).
 2. **Audits GCP resources** (Cloud Run, Cloud Functions, Compute Engine, Cloud SQL, Storage) via GCP client APIs and Monitoring.

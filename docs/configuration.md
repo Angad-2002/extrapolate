@@ -1,6 +1,6 @@
 # Configuration
 
-xpol can be configured via environment variables, the API config endpoints, or a config file (CLI).
+Extrapolate can be configured via environment variables, the API config endpoints, or a config file (CLI).
 
 ## Environment variables
 

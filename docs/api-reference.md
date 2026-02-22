@@ -1,6 +1,6 @@
 # API reference
 
-The xpol API is a **FastAPI** application. Start it with:
+The Extrapolate API is a **FastAPI** application (served by the `xpol` CLI). Start it with:
 
 ```bash
 uv run xpol api --port 8000
@@ -72,7 +72,7 @@ Audit types align with auditors: e.g. cloud_run, cloud_functions, compute, cloud
 
 ## Reports
 
-Reports are stored under the `reports` directory (relative to the xpol package root). Paths are validated to prevent traversal.
+Reports are stored under the `reports` directory (relative to the Extrapolate / xpol package root). Paths are validated to prevent traversal.
 
 | Method | Path | Description |
 |--------|------|-------------|
